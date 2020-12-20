@@ -14,4 +14,7 @@
 		<changelog>https://github.com/linux-surface/iptsd/releases<changelog>
 		<doc>https://github.com/linux-surface/iptsd</doc>
 	</upstream>
+	<use>
+		<flag name="sample">Install sample config override file</flag>
+		<flag name="debug">Build and install ipts-dbg for IPTS debugging purposes</flag>
 </pkgmetadata>

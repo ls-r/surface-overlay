@@ -3,8 +3,8 @@
 
 EAPI=7
 
-inherit meson # This eclass pre-selects meson and ninja as build dependencies
 inherit git-r3 # A git eclass is required when fetching directly from sources
+inherit meson # This eclass pre-selects meson and ninja as build dependencies
 
 DESCRIPTION="Intel Precise Touch & Stylus userspace daemon"
 HOMEPAGE="https://github.com/linux-surface/iptsd"
@@ -13,15 +13,17 @@ EGIT_REPO_URI="https://github.com/linux-surface/iptsd.git"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="sample debug"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
-
-# options specific to meson.eclass
-MYMESONARGS=("-Dsystemd=false")
+BDEPEND="dev-libs/inih"
 
 src_configure() {
-	meson_src_configure
+	local emesonargs=(
+		$(meson_use sample sample_config)
+		$(meson_use debug debug_tool)
+	)
+	meson_src_configure -Dsystemd=false
+	# TODO: enable support for systemd
 }
