@@ -17,4 +17,5 @@
 	<use>
 		<flag name="sample">Install sample config override file</flag>
 		<flag name="debug">Build and install ipts-dbg for IPTS debugging purposes</flag>
+	</use>
 </pkgmetadata>
