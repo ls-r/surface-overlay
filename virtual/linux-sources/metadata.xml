@@ -5,7 +5,7 @@
 		<email>git@ellisruckman.com</email>
 		<name>Ellis Ruckman</name>
 	</maintainer>
-	<longdescription lang="EN">
+	<longdescription lang="en">
 		Virtual package for all Linux kernel sources. The version in
 		this overlay includes sys-kernel/surface-sources.
 	</longdescription>

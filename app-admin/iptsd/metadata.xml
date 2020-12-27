@@ -5,13 +5,13 @@
 		<email>git@ellisruckman.com</email>
 		<name>Ellis Ruckman</name>
 	</maintainer>
-	<longdescription lang="EN">
+	<longdescription lang="en">
 		iptsd is a userspace daemon responsible for parsing data from the Intel
-		Precise Touch & Stylus (IPTS) kernel driver. On kernel v5.8 and up, this
+		Precise Touch and Stylus (IPTS) kernel driver. On kernel v5.8 and up, this
 		daemon is required to enable touch and pen input on devices using IPTS.
 	</longdescription>
 	<upstream>
-		<changelog>https://github.com/linux-surface/iptsd/releases<changelog>
+		<changelog>https://github.com/linux-surface/iptsd/releases</changelog>
 		<doc>https://github.com/linux-surface/iptsd</doc>
 	</upstream>
 	<use>

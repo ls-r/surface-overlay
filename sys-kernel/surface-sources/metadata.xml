@@ -5,12 +5,12 @@
 		<email>git@ellisruckman.com</email>
 		<name>Ellis Ruckman</name>
 	</maintainer>
-	<longdescription lang="EN">
+	<longdescription lang="en">
 		surface-sources includes the full source tree for the Linux kernel
 		patched with genpatches and linux-surface patches.
 	</longdescription>
 	<upstream>
-		<changelog>https://github.com/linux-surface/linux-surface/releases<changelog>
+		<changelog>https://github.com/linux-surface/linux-surface/releases</changelog>
 		<doc>https://github.com/linux-surface/linux-surface/wiki</doc>
 	</upstream>
 	<use>

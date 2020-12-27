@@ -11,7 +11,7 @@ inherit kernel-2
 detect_version
 detect_arch
 
-DESCRIPTION="Full sources for the Linux kernel tree including genpatches and linux-surface patches"
+DESCRIPTION="Full sources for the kernel tree including genpatches and linux-surface patches"
 HOMEPAGE="https://dev.gentoo.org/~mpagano/genpatches/ https://github.com/linux-surface/linux-surface"
 KEYWORDS="~amd64"
 IUSE="experimental"
