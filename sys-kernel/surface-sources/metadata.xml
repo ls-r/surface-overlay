@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>surface@ellisruckman.com</email>
+		<name>Ellis Ruckman</name>
+	</maintainer>
+	<longdescription lang="EN">
+		surface-sources includes the full source tree for the Linux kernel
+		patched with genpatches and linux-surface patches.
+	</longdescription>
+	<upstream>
+		<changelog>https://github.com/linux-surface/linux-surface/releases<changelog>
+		<doc>https://github.com/linux-surface/linux-surface/wiki</doc>
+	</upstream>
+	<use>
+		<flag name="experimental">Apply experimental genpatches</flag>
+	</use>
+</pkgmetadata>
