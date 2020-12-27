@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>surface@ellisruckman.com</email>
+		<email>git@ellisruckman.com</email>
 		<name>Ellis Ruckman</name>
 	</maintainer>
 	<longdescription lang="EN">
