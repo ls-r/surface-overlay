@@ -7,7 +7,7 @@
 	</maintainer>
 	<longdescription lang="en">
 		Virtual package for all Linux kernel sources. The version in
-		this overlay includes sys-kernel/surface-sources.
+		this overlay includes sys-kernel/surface-sources as a dependency.
 	</longdescription>
 	<use>
 		<flag name="firmware">Install linux kernel firmware</flag>
