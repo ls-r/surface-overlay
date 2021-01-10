@@ -1,2 +1,2 @@
 ## app-admin/iptsd
-- Upstream openrc init script
+- Make ebuild for official release
