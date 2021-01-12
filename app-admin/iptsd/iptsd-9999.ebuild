@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -18,19 +18,23 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND="dev-libs/inih"
 
+EMESON_SOURCE="${S}"
+BUILD_DIR="${WORKDIR}/${P}-build"
+
 src_configure() {
 	local emesonargs=(
-		-Dsystemd=false
+		"-Dservice_manager="
 		$(meson_use sample sample_config)
 		$(meson_use debug debug_tool)
 	)
+
 	meson_src_configure
 }
 
 src_install() {
-	newinitd "${FILESDIR}/iptsd.initd" "iptsd"
-	systemd_newunit "${FILESDIR}/iptsd.service" "iptsd.service"
-	udev_newrules "${FILESDIR}/50-ipts.rules" "50-ipts.rules"
+	newinitd "${BUILD_DIR}/iptsd.initd" "iptsd"
+	systemd_newunit "${BUILD_DIR}/iptsd.service" "iptsd.service"
+	udev_newrules "${EMESON_SOURCE}/etc/udev/50-ipts.rules" "50-ipts.rules"
 
 	meson_src_install
 }
