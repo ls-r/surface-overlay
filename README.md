@@ -22,6 +22,11 @@ Sometimes the daemon crashes when you put your device to sleep. I'm not
 sure exactly why this happens, but you can restart the daemon with
 `rc-service iptsd restart`.
 
+### app-misc/surface-control
+This utility program allows you to control various aspects of a Surface device
+including the performance mode (for all models) as well as the latch and dGPU
+(for Surface Books). Run it from the command line with `surface`.
+
 ### sys-kernel/surface-sources
 This installs sources files for the Linux kernel. The sources are based on
 [sys-kernel/gentoo-sources](https://packages.gentoo.org/packages/sys-kernel/gentoo-sources)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>git@ellisruckman.com</email>
+		<name>Ellis Ruckman</name>
+	</maintainer>
+	<longdescription lang="en">
+		surface-control is a command-line utility that allows you to control various
+                functions of Microsoft Surface devices including the performance mode as well
+                as the dGPU and latch system on Surface Books.
+	</longdescription>
+	<upstream>
+		<changelog>https://github.com/linux-surface/surface-control/releases</changelog>
+		<doc>https://github.com/linux-surface/surface-control</doc>
+	</upstream>
+</pkgmetadata>
