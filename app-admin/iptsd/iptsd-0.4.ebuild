@@ -3,15 +3,15 @@
 
 EAPI=7
 
-inherit git-r3 systemd udev meson
+inherit systemd udev meson
 
 DESCRIPTION="Intel Precise Touch & Stylus userspace daemon"
 HOMEPAGE="https://github.com/linux-surface/iptsd"
-EGIT_REPO_URI="https://github.com/linux-surface/iptsd.git"
+SRC_URI="https://github.com/linux-surface/iptsd/archive/v0.4.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="sample debug"
 
 DEPEND=""
