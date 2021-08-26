@@ -5,7 +5,7 @@ EAPI="6"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="30"
+K_GENPATCHES_VER="58"
 
 inherit kernel-2
 detect_version
@@ -16,7 +16,7 @@ HOMEPAGE="https://dev.gentoo.org/~mpagano/genpatches/ https://github.com/linux-s
 KEYWORDS="~amd64"
 IUSE="experimental"
 
-SURFACE_VERSION="debian-5.11.18"
+SURFACE_VERSION="debian-5.13.12-1"
 SURFACE_TARBALL="${SURFACE_VERSION}.tar.gz"
 SURFACE_URI="https://github.com/linux-surface/linux-surface/archive/${SURFACE_TARBALL}"
 
