@@ -7,7 +7,7 @@ inherit systemd udev meson
 
 DESCRIPTION="Intel Precise Touch & Stylus userspace daemon"
 HOMEPAGE="https://github.com/linux-surface/iptsd"
-SRC_URI="https://github.com/linux-surface/iptsd/archive/v0.4.tar.gz"
+SRC_URI="https://github.com/linux-surface/iptsd/archive/v0.5.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
