@@ -1,13 +1,13 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit systemd udev meson
 
 DESCRIPTION="Intel Precise Touch & Stylus userspace daemon"
 HOMEPAGE="https://github.com/linux-surface/iptsd"
-SRC_URI="https://github.com/linux-surface/iptsd/archive/v0.5.tar.gz"
+SRC_URI="https://github.com/linux-surface/iptsd/archive/v0.5.1.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
