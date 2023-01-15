@@ -5,7 +5,7 @@ EAPI="8"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="35"
+K_GENPATCHES_VER="84"
 
 inherit kernel-2
 detect_version
@@ -16,7 +16,7 @@ HOMEPAGE="https://dev.gentoo.org/~mpagano/genpatches/ https://github.com/linux-s
 KEYWORDS="~amd64"
 IUSE="experimental"
 
-SURFACE_VERSION="debian-5.16.17-1"
+SURFACE_VERSION="debian-6.0.12-5"
 SURFACE_TARBALL="${SURFACE_VERSION}.tar.gz"
 SURFACE_URI="https://github.com/linux-surface/linux-surface/archive/${SURFACE_TARBALL}"
 
@@ -25,7 +25,6 @@ SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${SURFACE_URI}"
 PATCH_PREFIX="${T}/linux-surface-${SURFACE_VERSION}/patches/${KV_MAJOR}.${KV_MINOR}"
 PATCHES=(
 	"${PATCH_PREFIX}/0001-surface3-oemb.patch"
-	"${PATCH_PREFIX}/0002-mwifiex.patch"
 	"${PATCH_PREFIX}/0003-ath10k.patch"
 	"${PATCH_PREFIX}/0004-ipts.patch"
 	"${PATCH_PREFIX}/0005-surface-sam.patch"
