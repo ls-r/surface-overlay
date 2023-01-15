@@ -5,7 +5,7 @@ EAPI="8"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras experimental"
-K_GENPATCHES_VER="236"
+K_GENPATCHES_VER="266"
 
 inherit kernel-2
 detect_version
@@ -16,7 +16,7 @@ HOMEPAGE="https://dev.gentoo.org/~mpagano/genpatches/ https://github.com/linux-s
 KEYWORDS="~amd64"
 IUSE="experimental"
 
-SURFACE_VERSION="debian-5.16.17-1"
+SURFACE_VERSION="debian-5.18.16-1"
 SURFACE_TARBALL="${SURFACE_VERSION}.tar.gz"
 SURFACE_URI="https://github.com/linux-surface/linux-surface/archive/${SURFACE_TARBALL}"
 
@@ -33,7 +33,6 @@ PATCHES=(
 	"${PATCH_PREFIX}/0008-surface-gpe.patch"
 	"${PATCH_PREFIX}/0009-surface-sam-over-hid.patch"
 	"${PATCH_PREFIX}/0010-surface-sam.patch"
-	"${PATCH_PREFIX}/0012-surface-typecover.patch"
 	"${PATCH_PREFIX}/0013-surface-go-touchscreen.patch"
 	"${PATCH_PREFIX}/0014-ath10k-firmware-override.patch"
 )
